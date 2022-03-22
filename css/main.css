@@ -173,8 +173,15 @@ img {
 
 .page-header {
   position: relative;
+  height: 60px;
   border-bottom: 1px solid #ececec;
   background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    height: 80px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -185,7 +192,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 60px;
+    height: 59px;
   }
 }
 
@@ -200,7 +207,6 @@ img {
   }
 }
 
-/* Site-Navigation */
 .menu-button {
   display: block;
   padding: 0;
@@ -299,7 +305,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .site-nav__link {
-    padding: 32px 0;
+    padding-top: 32px;
+    padding-bottom: 31px;
     font-size: 14px;
     line-height: 1.14;
   }
@@ -403,6 +410,13 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-size: 12px;
+    line-height: 1.167;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-nav__link {
     font-size: 14px;
     line-height: 1.14;
   }
@@ -464,10 +478,17 @@ img {
   display: inline-block;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
   text-decoration: none;
   color: #000000;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }
 
 .logo--inverse {
@@ -839,8 +860,10 @@ img {
 }
 
 /* Особенности */
-.features__section {
-  padding-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .features__section {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
