@@ -1,0 +1,20 @@
+.filters {
+  @extend%list;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 767px) {
+    align-content: space-between;
+    height: 91px;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+
+  margin-bottom: 50px;
+}
+.filters__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}

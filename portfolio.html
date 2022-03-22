@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+        <!-- Header -->
+        <header class="page-header">
+            <div class="container">
+                <nav class="nav">
+                    <a href="./" class="logo" lang="en"><span class="logo__accent">Web</span>Studio</a>
+                    <!-- modile modal -->
+                    <button class="menu-button is-open" type="button" aria-expanded="false" aria-controls="menu-container"
+                        data-menu-button>
+                        <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                            <use class="icon-cross" href="./images/icons.svg#icon-menu"></use>
+                            <use class="icon-menu" href="./images/icons.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+        
+                    <div class="menu-container" id="menu-container" data-menu>
+                        <ul class="site-nav">
+                            <li class="site-nav__item"><a href="./" class="site-nav__link">Студия</a>
+                            </li>
+                            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--active">Портфолио</a></li>
+                            <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+                        </ul>
+                        <!-- Contact-navigation -->
+                        <ul class="contact-nav">
+                            <li class="contact-nav__item">
+                                <a href="tel:+380961111111" class="contact-nav__link">
+                                    <svg class="contact-nav__icon" width="10" height="16">
+                                        <use href="./images/icons.svg#icon-smartphone"></use>
+                                    </svg>
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li class="contact-nav__item">
+                                <a href="mailto:info@devstudio.com" class="contact-nav__link">
+                                    <svg class="contact-nav__icon" width="16" height="12">
+                                        <use href="./images/icons.svg#icon-envelope"></use>
+                                    </svg>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+        
+                        </ul>
+        
+                        <!-- Mobile social navigation -->
+                        <ul class="mobile-social-nav">
+                            <li class="mobile-social-nav__item">
+                                <a class="mobile-social-nav__link" href="">Instagram</a>
+                                <svg class="mobile-social-nav__line" width="1" height="22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke="#212121" stroke-opacity=".2" d="M.5 0v22" />
+                                </svg>
+                            </li>
+                            <li class="mobile-social-nav__item">
+                                <a class="mobile-social-nav__link" href="">Twitter</a>
+                                <svg class="mobile-social-nav__line" width="1" height="22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke="#212121" stroke-opacity=".2" d="M.5 0v22" />
+                                </svg>
+                            </li>
+                            <li class="mobile-social-nav__item">
+                                <a class="mobile-social-nav__link" href="">Facebook</a>
+                                <svg class="mobile-social-nav__line" width="1" height="22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke="#212121" stroke-opacity=".2" d="M.5 0v22" />
+                                </svg>
+                            </li>
+                            <li class="mobile-social-nav__item">
+                                <a class="mobile-social-nav__link" href="">LinkedIn</a>
+        
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+        
+        
+            </div>
+        </header>
+        
+        
+        <!-- Main -->
+        <main>
+            <section class="section">
+                <div class="container">
+                    <h2 class="section__title visually-hidden">Портфолио</h2>
+                    
+                    <!-- Filters -->
+                    <ul class="filters">
+                        <li class="filters__item"><button type="button" class="portfolio-button ">Все</button></li>
+                        <li class="filters__item"><button type="button" class="portfolio-button">Веб-сайты</button></li>
+                        <li class="filters__item"><button type="button" class="portfolio-button">Приложения</button></li>
+                        <li class="filters__item"><button type="button" class="portfolio-button">Дизайн</button></li>
+                        <li class="filters__item"><button type="button" class="portfolio-button">Маркетинг</button></li>
+                    </ul>
+                    
+                    <!-- Projects -->
+                    <!-- 1-3 -->
+                    <ul class="portfolio">
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__link">
+                                <div class="portfolio__thumb">
+                                    <img srcset="
+                                    ./images/portfolio/1-3/P1-370.jpg 370w,
+                                    ./images/portfolio/1-3/P1-740.jpg 740w,
+                                    ./images/portfolio/1-3/P1-354.jpg 354w,
+                                    ./images/portfolio/1-3/P1-708.jpg 708w,
+                                    ./images/portfolio/1-3/P1-450.jpg 450w,
+                                    ./images/portfolio/1-3/P1-900.jpg 900w"
+                                    src="./images/portfolio/1-3/P1-370.jpg" alt="Технокряк"
+                                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,(min-width:480px) 450px, 100vw"
+                                    class="portfolio__img"
+                                    >
+
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__content">Технокряк это современная площадка распространения коронавируса. Компании используют
+                                            эту платформу для цифрового
+                                            шпионажа и атак на защищённые сервера конкурентов.</p>
+                                    </div>
+                                </div>
+                               
+
+                                <div class="portfolio__meta">
+                                    <h3 class="portfolio__name">Технокряк</h3>
+                                    <p class="portfolio__branch">Веб-сайт</p>
+                               </div>  
+                            </a>
+                        </li>
+                        
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__link">
+                                <div class="portfolio__thumb">
+                                    <img srcset="
+                                    ./images/portfolio/1-3/P2-370.jpg 370w,
+                                    ./images/portfolio/1-3/P2-740.jpg 740w,
+                                    ./images/portfolio/1-3/P2-354.jpg 354w,
+                                    ./images/portfolio/1-3/P2-708.jpg 708w,
+                                    ./images/portfolio/1-3/P2-450.jpg 450w,
+                                    ./images/portfolio/1-3/P2-900.jpg 900w"
+                                    src="./images/portfolio/1-3/P2-370.jpg" alt="Постер New Orlean vs Golden Star"
+                                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,(min-width:480px) 450px, 100vw"
+                                    class="portfolio__img"
+                                    >
+
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__content">Постер New Orlean vs Golden Star</p>
+                                    </div>
+                                </div>
+
+                                <div class="portfolio__meta">
+                                    <h3 class="portfolio__name">Постер New Orlean vs Golden-Star</h3>
+                                    <p class="portfolio__branch">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__link">
+                                <div class="portfolio__thumb">
+                                    <img srcset="
+                                    ./images/portfolio/1-3/P3-370.jpg 370w,
+                                    ./images/portfolio/1-3/P3-740.jpg 740w,
+                                    ./images/portfolio/1-3/P3-354.jpg 354w,
+                                    ./images/portfolio/1-3/P3-708.jpg 708w,
+                                    ./images/portfolio/1-3/P3-450.jpg 450w,
+                                    ./images/portfolio/1-3/P3-900.jpg 900w"
+                                    src="./images/portfolio/1-3/P3-370.jpg" alt="Ресторан Seafood"
+                                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,(min-width:480px) 450px, 100vw"
+                                    class="portfolio__img"
+                                    >
+                                    
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__content">Ресторан Seafood</p>
+                                    </div>
+                                </div>
+
+                                <div class="portfolio__meta">
+                                    <h3 class="portfolio__name">Ресторан Seafood</h3>
+                                    <p class="portfolio__branch">Приложение</p>
+                                </div> 
+                            </a>
+                        </li>
+
+                        <!-- 4-6 -->
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__link">
+                                <div class="portfolio__thumb">
+                                    <img srcset="
+                                    ./images/portfolio/4-6/P4-370.jpg 370w,
+                                    ./images/portfolio/4-6/P4-740.jpg 740w,
+                                    ./images/portfolio/4-6/P4-354.jpg 354w,
+                                    ./images/portfolio/4-6/P4-708.jpg 708w,
+                                    ./images/portfolio/4-6/P4-450.jpg 450w,
+                                    ./images/portfolio/4-6/P4-900.jpg 900w"
+                                    src="./images/portfolio/4-6/P4-370.jpg" alt="Проект Prime"
+                                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,(min-width:480px) 450px, 100vw"
+                                    class="portfolio__img"
+                                    >
+                                    
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__content">Проект Prime</p>
+                                    </div>
+                                </div>
+
+                                <div class="portfolio__meta">
+                                    <h3 class="portfolio__name">Проект Prime</h3>
+                                    <p class="portfolio__branch">Маркетинг</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__link">
+                                <div class="portfolio__thumb">
+                                    <img srcset="
+                                    ./images/portfolio/4-6/P5-370.jpg 370w,
+                                    ./images/portfolio/4-6/P5-740.jpg 740w,
+                                    ./images/portfolio/4-6/P5-354.jpg 354w,
+                                    ./images/portfolio/4-6/P5-708.jpg 708w,
+                                    ./images/portfolio/4-6/P5-450.jpg 450w,
+                                    ./images/portfolio/4-6/P5-900.jpg 900w"
+                                    src="./images/portfolio/4-6/P5-370.jpg" alt="Проект Boxes"
+                                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,(min-width:480px) 450px, 100vw"
+                                    class="portfolio__img"
+                                    >
+                                    
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__content">Проект Boxes</p>
+                                    </div>
+                                </div>
+
+                                <div class="portfolio__meta">
+                                    <h3 class="portfolio__name">Проект Boxes</h3>
+                                    <p class="portfolio__branch">Приложение</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__link">
+                                <div class="portfolio__thumb">
+                                    <img srcset="
+                                    ./images/portfolio/4-6/P6-370.jpg 370w,
+                                    ./images/portfolio/4-6/P6-740.jpg 740w,
+                                    ./images/portfolio/4-6/P6-354.jpg 354w,
+                                    ./images/portfolio/4-6/P6-708.jpg 708w,
+                                    ./images/portfolio/4-6/P6-450.jpg 450w,
+                                    ./images/portfolio/4-6/P6-900.jpg 900w"
+                                    src="./images/portfolio/4-6/P6-370.jpg" alt="Inspiration has no Borders"
+                                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,(min-width:480px) 450px, 100vw"
+                                    class="portfolio__img"
+                                    >
+                                    
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__content">Inspiration has no Borders</p>
+                                    </div>
+                                </div>
+
+                                <div class="portfolio__meta">
+                                    <h3 class="portfolio__name">Inspiration has no Borders</h3>
+                                    <p class="portfolio__branch">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <!-- 7-9 -->
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__link">
+                                <div class="portfolio__thumb">
+                                    <img srcset="
+                                    ./images/portfolio/7-9/P7-370.jpg 370w,
+                                    ./images/portfolio/7-9/P7-740.jpg 740w,
+                                    ./images/portfolio/7-9/P7-354.jpg 354w,
+                                    ./images/portfolio/7-9/P7-708.jpg 708w,
+                                    ./images/portfolio/7-9/P7-450.jpg 450w,
+                                    ./images/portfolio/7-9/P7-900.jpg 900w"
+                                    src="./images/portfolio/7-9/P7-370.jpg" alt="Издание Limited Edition"
+                                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,(min-width:480px) 450px, 100vw"
+                                    class="portfolio__img"
+                                    >
+                                    
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__content">Издание Limited Edition</p>
+                                    </div>
+                                </div>
+
+                                <div class="portfolio__meta">
+                                    <h3 class="portfolio__name">Издание Limited Edition</h3>
+                                    <p class="portfolio__branch">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__link">
+                                <div class="portfolio__thumb">
+                                    <img srcset="
+                                    ./images/portfolio/7-9/P8-370.jpg 370w,
+                                    ./images/portfolio/7-9/P8-740.jpg 740w,
+                                    ./images/portfolio/7-9/P8-354.jpg 354w,
+                                    ./images/portfolio/7-9/P8-708.jpg 708w,
+                                    ./images/portfolio/7-9/P8-450.jpg 450w,
+                                    ./images/portfolio/7-9/P8-900.jpg 900w"
+                                    src="./images/portfolio/7-9/P8-370.jpg" alt="Проект LAB"
+                                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,(min-width:480px) 450px, 100vw"
+                                    class="portfolio__img"
+                                    >
+                                    
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__content">Проект LAB</p>
+                                    </div>
+                                </div>
+
+                                <div class="portfolio__meta">
+                                    <h3 class="portfolio__name">Проект LAB</h3>
+                                    <p class="portfolio__branch">Маркетинг</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__link">
+                                <div class="portfolio__thumb">
+                                    <img srcset="
+                                    ./images/portfolio/7-9/P9-370.jpg 370w,
+                                    ./images/portfolio/7-9/P9-740.jpg 740w,
+                                    ./images/portfolio/7-9/P9-354.jpg 354w,
+                                    ./images/portfolio/7-9/P9-708.jpg 708w,
+                                    ./images/portfolio/7-9/P9-450.jpg 450w,
+                                    ./images/portfolio/7-9/P9-900.jpg 900w"
+                                    src="./images/portfolio/7-9/P9-370.jpg" alt="Growing Business"
+                                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,(min-width:480px) 450px, 100vw"
+                                    class="portfolio__img"
+                                    >
+                                    
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__content">Growing Business</p>
+                                    </div>
+                                </div>
+
+                                <div class="portfolio__meta">
+                                    <h3 class="portfolio__name">Growing Business</h3>
+                                    <p class="portfolio__branch">Приложение</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+             </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="page-footer">
+            <div class="container page-footer__container">
+                <!-- Column-1 -->
+                <div class="footer-column-address">
+                    <a href="./" class="logo logo--inverse" lang="en">
+                        <span class="logo__accent">Web</span>Studio
+                    </a>
+        
+                    <address class="address">
+                        <ul class="address__list">
+                            <li class="address__item"><a href="https://goo.gl/maps/2UURq9KAm3fEJeZc8" target="_blank"
+                                    rel="noopener noreferrer" class="address__link">г. Киев, пр-т Леси Украинки, 26</a></li>
+                            <li class="address__item"><a href="mailto:info@example.com"
+                                    class="address__link">info@example.com</a></li>
+                            <li class="address__item"><a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <!-- Column-2 -->
+                <div class="footer-column-social">
+                    <h2 class="footer-column__title">присоединяйтесь</h2>
+                    <ul class="social-connect">
+                        <!-- instagram -->
+                        <li class="social-connect__item social-connect__item--darkmode">
+                            <a href="" class="social-connect__link">
+                                <svg class="social-connect__icon social-connect__icon--darkmode" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- twitter -->
+                        <li class="social-connect__item social-connect__item--darkmode">
+                            <a href="" class="social-connect__link">
+                                <svg class="social-connect__icon social-connect__icon--darkmode" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- facebook -->
+                        <li class="social-connect__item social-connect__item--darkmode">
+                            <a href="" class="social-connect__link">
+                                <svg class="social-connect__icon social-connect__icon--darkmode" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- linkedin -->
+                        <li class="social-connect__item social-connect__item--darkmode">
+                            <a href="" class="social-connect__link">
+                                <svg class="social-connect__icon social-connect__icon--darkmode" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Column-3 -->
+                <div class="footer-column-form">
+                    <h2 class="footer-column__title">Подпишитесь на рассылку</h2>
+                    <form class="footer-form">
+                        <label class="footer-form__field">
+                            <input type="email" class="footer-form__input" name="E-mail" placeholder="E-mail">
+                            <span class="footer-form__label visually-hidden">E-mail</span>
+                        </label>
+                        <button type="submit" class="form-button footer__form-button">
+                            <span>Подписаться</span>
+                            <svg class="form-button__icon form-button__icon--apend" width="24" height="24">
+                                <use href="./images/icons.svg#icon-footer-form-send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <script src="./menu.js"></script>
+</body>
+</html>
