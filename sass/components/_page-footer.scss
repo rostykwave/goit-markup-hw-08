@@ -52,7 +52,10 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 }
 .address__link {
@@ -121,8 +124,15 @@
 
 .footer-form__input {
   // width: 100%;
-  width: 358px;
+  max-width: 450px;
   height: 50px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 
   padding-left: 16px;
   padding-right: 16px;
