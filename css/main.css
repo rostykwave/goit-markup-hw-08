@@ -215,6 +215,11 @@ img {
   z-index: 998;
 }
 
+.menu-button:hover .menu-button__icon,
+.menu-button:focus .menu-button__icon {
+  fill: #2196f3;
+}
+
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;
@@ -852,11 +857,19 @@ img {
 }
 
 .section__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.167;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.167;
+  }
 }
 
 /* Особенности */
@@ -1008,7 +1021,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .team-member {
+  .team-member:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1033,7 +1046,13 @@ img {
 
 .team-member__meta {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-member__meta {
+    margin-bottom: 30px;
+  }
 }
 
 .team-member__name {
@@ -1419,6 +1438,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-column-form {
+    margin-top: 0;
     margin-left: auto;
     width: 570px;
   }

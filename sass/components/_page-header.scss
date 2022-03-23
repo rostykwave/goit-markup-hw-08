@@ -34,6 +34,11 @@
   background-color: transparent;
   z-index: 998;
 
+  &:hover,
+  &:focus {
+    fill: $hover-accent;
+  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }

@@ -12,7 +12,9 @@
 
 .team-member {
   @media screen and(max-width:767px) {
-    margin-bottom: 30px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
   @media screen and (min-width: 768px) {
     @include grid__item(30px, 2);
@@ -29,7 +31,11 @@
 
 .team-member__meta {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
 }
 .team-member__name {
   margin-bottom: 10px;
