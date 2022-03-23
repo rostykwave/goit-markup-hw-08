@@ -215,17 +215,6 @@ img {
   z-index: 998;
 }
 
-.menu-button:hover .menu-button__icon,
-.menu-button:focus .menu-button__icon {
-  fill: #2196f3;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-button {
-    display: none;
-  }
-}
-
 .menu-button .icon-cross {
   display: none;
 }
@@ -236,6 +225,16 @@ img {
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.menu-button:hover, .menu-button:focus {
+  fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
