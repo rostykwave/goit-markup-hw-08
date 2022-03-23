@@ -190,6 +190,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .nav {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -213,10 +214,17 @@ img {
 
 .menu-button {
   display: block;
+  height: 40px;
   padding: 0;
   margin-left: auto;
   background-color: transparent;
   z-index: 998;
+}
+
+.menu-button.is-open {
+  position: absolute;
+  top: 10px;
+  right: 0;
 }
 
 .menu-button .icon-cross {
@@ -242,18 +250,34 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .menu-container {
+  .menu-backdrop {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 48px 15px 48px 40px;
+    height: 100%;
+    overflow-y: scroll;
     background-color: #fff;
   }
-  .menu-container.is-open {
+  .menu-backdrop.is-open {
     display: block;
     z-index: 996;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-backdrop {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    padding: 48px 15px 48px 40px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -451,6 +475,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
